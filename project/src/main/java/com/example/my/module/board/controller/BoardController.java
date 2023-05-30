@@ -1,14 +1,11 @@
-package com.example.teamproject.module.board.controller;
+package com.example.my.module.board.controller;
 
 
-import com.example.teamproject.module.board.entity.BoardEntity;
-import com.example.teamproject.module.board.service.BoardService;
+import com.example.my.module.board.service.BoardService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-
-import java.util.List;
 
 @Controller
 @RequiredArgsConstructor

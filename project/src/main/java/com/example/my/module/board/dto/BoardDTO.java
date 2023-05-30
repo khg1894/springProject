@@ -1,6 +1,6 @@
-package com.example.teamproject.module.board.dto;
+package com.example.my.module.board.dto;
 
-import com.example.teamproject.module.board.entity.BoardEntity;
+import com.example.my.module.board.entity.BoardEntity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

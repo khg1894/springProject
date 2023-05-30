@@ -13,7 +13,7 @@ public interface MemberRepository {
 
     List<MemberEntity> getMemberAll();
 
-    List<String> getMemberIdAll();
+    List<MemberEntity> getMemberIdAll();
 
     MemberEntity getMember(String id);
 

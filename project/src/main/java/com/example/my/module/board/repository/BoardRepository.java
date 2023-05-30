@@ -1,6 +1,6 @@
-package com.example.teamproject.module.board.repository;
+package com.example.my.module.board.repository;
 
-import com.example.teamproject.module.board.entity.BoardEntity;
+import com.example.my.module.board.entity.BoardEntity;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
@@ -18,7 +18,7 @@ public interface BoardRepository {
 
     // Board Total Count : 총 게시물 수
     /*Integer getBoardTotalCount(@Param("keyField") String keyField, @Param("keyWord") String keyWord);*/
-    Integer getBoardTotalCount();
+//    Integer getBoardTotalCount();
 
 
     // 문의게시글 목록 조회
@@ -27,30 +27,30 @@ public interface BoardRepository {
 
 
 
-    //게시글 조회수 증가
-    void incBoardViewCount(Integer idx);
-
-
-
-    // 선택한 게시글 내용 조회
-    BoardEntity getOneBoardContent(Integer idx);
-
-
-    //게시글 수정
-    void updateBord(BoardEntity boardEntity, Integer idx);
-
-
-
-    //게시글 삭제
-    void deleteBord(BoardEntity boardEntity, Integer idx);
-
-
-    //게시글 "첨부파일" 삭제
-    void deleteAttachFile(BoardEntity boardEntity, Integer idx);
-
-
-    // 게시판 작성자 ID확인
-    String getBoardWriterId(Integer idx);
+//    //게시글 조회수 증가
+//    void incBoardViewCount(Integer idx);
+//
+//
+//
+//    // 선택한 게시글 내용 조회
+//    BoardEntity getOneBoardContent(Integer idx);
+//
+//
+//    //게시글 수정
+//    void updateBord(BoardEntity boardEntity, Integer idx);
+//
+//
+//
+//    //게시글 삭제
+//    void deleteBord(BoardEntity boardEntity, Integer idx);
+//
+//
+//    //게시글 "첨부파일" 삭제
+//    void deleteAttachFile(BoardEntity boardEntity, Integer idx);
+//
+//
+//    // 게시판 작성자 ID확인
+//    String getBoardWriterId(Integer idx);
 
 
 

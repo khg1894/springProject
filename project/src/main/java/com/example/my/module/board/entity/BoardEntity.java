@@ -1,4 +1,4 @@
-package com.example.teamproject.module.board.entity;
+package com.example.my.module.board.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

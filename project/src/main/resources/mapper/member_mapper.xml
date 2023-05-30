@@ -31,6 +31,33 @@
         SELECT <include refid="fullColumn"/>
         FROM MEMBER where id =#{id}
     </select>
-
+    <insert id="insertMember" parameterType="com.example.my.module.board.entity.BoardEntity">
+        INSERT INTO MEMBER (
+            id,
+            pw,
+            name,
+            regdt,
+            gender,
+            birthday,
+            mail,
+            grade,
+            phone,
+            mileage,
+            authority
+        )
+        VALUES (
+                   #{id},
+                   #{pw},
+                   #{name},
+                   #{regdt},
+                   #{gender},
+                   #{birthday},
+                   #{mail},
+                   #{grade},
+                   #{phone},
+                   #{mileage},
+                   #{authority}
+               )
+    </insert>
 
 </mapper>
