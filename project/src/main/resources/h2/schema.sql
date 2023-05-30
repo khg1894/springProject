@@ -25,4 +25,19 @@ CREATE TABLE `member` (
   mileage int DEFAULT NULL,
   authority varchar(20) NOT NULL,
   PRIMARY KEY (id)
-) 
+) ;
+CREATE TABLE `board`
+(
+    idx INT NOT NULL AUTO_INCREMENT,
+    id varchar(20) not NULL,
+    subject varchar(50) not NULL,
+    content VARCHAR,
+    secret varchar(2) DEFAULT '0',
+    reg_date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    count int,
+    filename varchar(30),
+    filesize int,
+    answer VARCHAR,
+
+    PRIMARY KEY (idx)
+);
