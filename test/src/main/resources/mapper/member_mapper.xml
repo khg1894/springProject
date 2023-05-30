@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.my.module.member.repository.MemberRepository">
+
+    <sql id="fullColumn">
+        id,
+        pw,
+        name,
+        regdt,
+        gender,
+        birthday,
+        mail,
+        grade,
+        phone,
+        mileage,
+        authority
+    </sql>
+
+    <select id="getMemberAll" resultType="com.example.my.module.member.entity.MemberEntity">
+        SELECT <include refid="fullColumn"/>
+        FROM MEMBER
+    </select>
+
+    <select id="getMemberIdAll" resultType="com.example.my.module.member.entity.MemberEntity">
+        SELECT id 
+        FROM MEMBER
+    </select>
+
+    <select id="getMember" resultType="com.example.my.module.member.entity.MemberEntity">
+        SELECT <include refid="fullColumn"/>
+        FROM MEMBER where id =#{id}
+    </select>
+
+
+</mapper>
